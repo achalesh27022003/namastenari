@@ -101,6 +101,9 @@ const tips = [
   // 2. Choose random tip
   const randomTip = tips[Math.floor(Math.random() * tips.length)];
 
+  const isMobile = window.innerWidth <= 768;
+  const tipFont = isMobile ? "mania" : "cursive";
+
     // 4. Add "Tip of the Day" heading
 tipBox.add([
     k.text("📝Tip of the Day", {
@@ -115,7 +118,7 @@ tipBox.add([
   // 5. Add the random tip content
  const tipText = tipBox.add([
     k.text("", {
-      font: "cursive",
+      font: tipFont,
       size: 48,
       width: 1300, // for automatic line wrapping
       align: "center",
