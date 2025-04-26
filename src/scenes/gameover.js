@@ -116,7 +116,7 @@ tipBox.add([
  const tipText = tipBox.add([
     k.text("", {
       font: "cursive",
-      size: 36,
+      size: 48,
       width: 1300, // for automatic line wrapping
       align: "center",
     }),
